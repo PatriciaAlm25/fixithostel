@@ -11,8 +11,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "cd frontend &&npm run build",
+    "deploy": "gh-pages -d frontend/dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.93.2",
