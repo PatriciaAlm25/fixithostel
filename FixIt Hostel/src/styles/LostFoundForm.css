@@ -1,0 +1,162 @@
+.lost-found-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lost-found-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.lost-found-form .form-group {
+  margin-bottom: 15px;
+}
+
+.lost-found-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.lost-found-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.lost-found-form .form-control:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.lost-found-form .form-control:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.lost-found-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.lost-found-form .alert {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.lost-found-form .alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.lost-found-form .alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.lost-found-form .image-preview-container {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.lost-found-form .preview-count {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.lost-found-form .image-previews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.lost-found-form .image-preview-item {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lost-found-form .image-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lost-found-form .btn-remove-image {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.lost-found-form .btn-remove-image:hover {
+  background-color: #c82333;
+}
+
+.lost-found-form .btn-remove-image:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lost-found-form .btn-block {
+  width: 100%;
+}
+
+.lost-found-form .btn-primary {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lost-found-form .btn-primary:hover {
+  background-color: #357abd;
+}
+
+.lost-found-form .btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

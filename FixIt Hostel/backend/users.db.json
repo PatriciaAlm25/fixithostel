@@ -1,0 +1,85 @@
+{
+  "users": {
+    "user_test_001": {
+      "id": "user_test_001",
+      "email": "test@example.com",
+      "password": "$2b$10$moaByCziVLQgAN/XDmLKreLlhL4kxs03nHzL8sd2WOBkfMzd6AdqO",
+      "name": "Test User",
+      "role": "student",
+      "registeredAt": "2026-01-30T14:31:30.774Z"
+    },
+    "user_test_002": {
+      "id": "user_test_002",
+      "email": "student@example.com",
+      "password": "$2b$10$moaByCziVLQgAN/XDmLKreLlhL4kxs03nHzL8sd2WOBkfMzd6AdqO",
+      "name": "Student User",
+      "role": "student",
+      "hostel": "Hostel A",
+      "block": "Block 1",
+      "room_no": "101",
+      "registeredAt": "2026-01-30T14:31:30.776Z"
+    },
+    "user_test_003": {
+      "id": "user_test_003",
+      "email": "caretaker@example.com",
+      "password": "$2b$10$moaByCziVLQgAN/XDmLKreLlhL4kxs03nHzL8sd2WOBkfMzd6AdqO",
+      "name": "Caretaker User",
+      "role": "caretaker",
+      "hostel": "Hostel A",
+      "registeredAt": "2026-01-30T14:31:30.776Z"
+    },
+    "user_test_004": {
+      "id": "user_test_004",
+      "email": "management@example.com",
+      "password": "$2b$10$moaByCziVLQgAN/XDmLKreLlhL4kxs03nHzL8sd2WOBkfMzd6AdqO",
+      "name": "Management User",
+      "role": "management",
+      "hostel": "Hostel A",
+      "registeredAt": "2026-01-30T14:31:30.776Z"
+    },
+    "user_1769784047793": {
+      "id": "user_1769784047793",
+      "email": "patalmeida0707@gmail.com",
+      "password": "$2b$10$MylAnurrICGCLL4ckGEuq.eHvx8TNwCOHYKYmP6jhyZG76Vey4oju",
+      "name": "patricia almeida",
+      "role": "student",
+      "registeredAt": "2026-01-30T14:40:47.956Z",
+      "email_verified": true,
+      "hostel": "Hostel B",
+      "block": "Block 1",
+      "room_no": "104",
+      "dob": "2007-07-25",
+      "age": "18",
+      "department": "Mechanical",
+      "college": "Goa College of Engineering",
+      "year": "2",
+      "hostelId": "Hostel B-Block 1-R104"
+    },
+    "user_1769785544001": {
+      "id": "user_1769785544001",
+      "email": "fixithostet@gmail.com",
+      "password": "$2b$10$u8ArDK4N4x1FjGzjRt3lJ./UK/Wuctlm3Keo1ALFksRTf4.BNnwUq",
+      "name": "fixit hostel",
+      "role": "management",
+      "registeredAt": "2026-01-30T15:05:44.166Z",
+      "email_verified": true,
+      "hostel": "",
+      "block": "",
+      "room_no": "",
+      "hostelType": "hostel"
+    },
+    "user_1769786680495": {
+      "id": "user_1769786680495",
+      "email": "patricia07alm@gmail.com",
+      "password": "$2b$10$VE9sAq2BjTCFxO8A06xMc.FkykILtemujnL5hmLj7IdPl3hUl1hfu",
+      "name": "caretaker 1",
+      "role": "caretaker",
+      "registeredAt": "2026-01-30T15:24:40.662Z",
+      "email_verified": true,
+      "hostel": "Hostel A",
+      "block": "",
+      "room_no": "",
+      "specialization": "Plumbing"
+    }
+  }
+}

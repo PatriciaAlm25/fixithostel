@@ -1,0 +1,586 @@
+/* Management Dashboard Styles */
+
+.management-dashboard-main {
+  padding: 2rem;
+}
+
+.management-dashboard-main .greeting-section {
+  margin-bottom: 2rem;
+}
+
+.management-dashboard-main .greeting-section h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.management-dashboard-main .greeting-section p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.management-dashboard-main .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.management-dashboard-main .stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.action-section {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-section .primary-btn,
+.action-section .secondary-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.action-section .primary-btn {
+  background: #667eea;
+  color: white;
+}
+
+.action-section .primary-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f5f7fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+/* Issues Management Section */
+
+.issues-management-section {
+  padding: 2rem;
+}
+
+.issues-management-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.issues-controls,
+.items-controls,
+.announcements-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.issues-controls .secondary-btn,
+.items-controls .secondary-btn,
+.announcements-controls .secondary-btn {
+  padding: 0.6rem 1.2rem;
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.issues-controls .secondary-btn:hover,
+.items-controls .secondary-btn:hover,
+.announcements-controls .secondary-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.issues-management-list,
+.lost-found-management-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Issue Management Card */
+
+.issue-management-card,
+.item-management-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.issue-management-card:hover,
+.item-management-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.issue-header,
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.issue-header h3,
+.item-header h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  word-break: break-word;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.status-reported {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-assigned {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.status-in_progress {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.status-fixed,
+.status-resolved {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.status-repairing,
+.status-pending {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.status-closed {
+  background: #f5f5f5;
+  color: #666;
+}
+
+/* Item Type Badge */
+
+.item-type-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.item-type-badge.lost {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.item-type-badge.found {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Issue/Item Details */
+
+.issue-details,
+.item-details {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.issue-details p,
+.item-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.issue-details strong,
+.item-details strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Management Actions */
+
+.issue-management-actions,
+.item-management-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-group label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.status-select,
+.form-select {
+  padding: 0.6rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-select:hover,
+.form-select:hover {
+  border-color: #667eea;
+  background-color: #f9fbfd;
+}
+
+.status-select:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.action-btn {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.action-btn.assign-btn {
+  background: #667eea;
+  color: white;
+}
+
+.action-btn.assign-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.action-btn.assign-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Modal Styles */
+
+.assign-modal-content,
+.status-update-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.issue-info,
+.item-info,
+.current-status {
+  padding: 1rem;
+  background: #f9fbfd;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group select,
+.form-group input {
+  padding: 0.7rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group select:hover,
+.form-group input:hover {
+  border-color: #667eea;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.modal-actions .primary-btn,
+.modal-actions .secondary-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.modal-actions .primary-btn {
+  background: #667eea;
+  color: white;
+}
+
+.modal-actions .primary-btn:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.modal-actions .primary-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.modal-actions .secondary-btn {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.modal-actions .secondary-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+/* Lost & Found Management */
+
+.lost-found-management-section {
+  padding: 2rem;
+}
+
+.lost-found-management-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Announcements Management */
+
+.announcements-management-section {
+  padding: 2rem;
+}
+
+.announcements-management-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.announcements-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Empty State */
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .management-dashboard-main {
+    padding: 1rem;
+  }
+
+  .management-dashboard-main .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .management-dashboard-main .stat-number {
+    font-size: 2rem;
+  }
+
+  .issues-management-section,
+  .lost-found-management-section,
+  .announcements-management-section {
+    padding: 1rem;
+  }
+
+  .issues-management-list,
+  .lost-found-management-list {
+    grid-template-columns: 1fr;
+  }
+
+  .issue-management-actions,
+  .item-management-actions {
+    flex-direction: column;
+  }
+
+  .action-group {
+    width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .primary-btn,
+  .modal-actions .secondary-btn {
+    width: 100%;
+  }
+
+  .quick-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .issue-header,
+  .item-header {
+    flex-direction: column;
+  }
+
+  .status-badge,
+  .item-type-badge {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-dashboard-main .greeting-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .management-dashboard-main .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .management-dashboard-main .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .issues-management-list,
+  .lost-found-management-list {
+    gap: 1rem;
+  }
+
+  .action-section {
+    flex-direction: column;
+  }
+
+  .action-section .primary-btn {
+    width: 100%;
+  }
+}
+
+/* Animation for cards appearing */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.issue-management-card,
+.item-management-card {
+  animation: slideIn 0.3s ease;
+}

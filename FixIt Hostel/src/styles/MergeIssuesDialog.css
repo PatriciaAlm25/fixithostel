@@ -1,0 +1,323 @@
+/* Merge Issues Dialog Styling */
+.merge-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.merge-dialog {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 100%;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+}
+
+.dialog-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: white;
+  color: #333;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+/* Sections */
+.primary-issue-section,
+.duplicate-issues-section {
+  margin-bottom: 25px;
+}
+
+.primary-issue-section h4,
+.duplicate-issues-section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+/* Primary Issue Card */
+.primary-issue-card {
+  background-color: #f0f8f0;
+  border: 2px solid #4CAF50;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.primary-issue-card h5 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary-issue-card p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.primary-issue-card .status-badge {
+  display: inline-block;
+}
+
+/* Duplicate Issues Checklist */
+.issues-checklist {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.checkbox-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  align-items: flex-start;
+}
+
+.checkbox-item:hover {
+  background-color: #f5f5f5;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  cursor: pointer;
+  margin-top: 2px;
+  accent-color: #4CAF50;
+}
+
+.issue-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.issue-info h5 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.issue-meta {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+
+.issue-info .status-badge {
+  display: inline-block;
+  font-size: 11px;
+}
+
+.no-issues {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-badge {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+/* Info Box */
+.merge-info-box {
+  background-color: #fff9e6;
+  border-left: 4px solid #ffc107;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.merge-info-box p {
+  margin: 0 0 10px 0;
+  color: #6f5c00;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.merge-info-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #6f5c00;
+}
+
+.merge-info-box li {
+  font-size: 12px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.merge-info-box li:last-child {
+  margin-bottom: 0;
+}
+
+/* Dialog Actions */
+.dialog-actions {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  justify-content: flex-end;
+}
+
+.dialog-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.dialog-actions .cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.dialog-actions .cancel-btn:hover:not(:disabled) {
+  background-color: #d0d0d0;
+}
+
+.dialog-actions .merge-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dialog-actions .merge-btn:hover:not(:disabled) {
+  background-color: #45a049;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.dialog-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .merge-dialog {
+    max-width: calc(100% - 40px);
+    max-height: 90vh;
+  }
+
+  .dialog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dialog-actions {
+    flex-direction: column-reverse;
+  }
+
+  .dialog-actions button {
+    width: 100%;
+  }
+
+  .issues-checklist {
+    max-height: 200px;
+  }
+}
+
+/* Scrollbar Styling */
+.issues-checklist::-webkit-scrollbar {
+  width: 6px;
+}
+
+.issues-checklist::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.issues-checklist::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.issues-checklist::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

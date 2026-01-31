@@ -1,0 +1,257 @@
+/* Merged Issues Panel Styling */
+.merged-issues-panel {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #fafafa;
+  margin-top: 20px;
+}
+
+.merge-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.merge-badge {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.merge-info {
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.merge-metadata {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.merge-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.merge-stat-label {
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.merge-stat-value {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Linked Issues List */
+.linked-issues-list {
+  margin-top: 15px;
+}
+
+.linked-issues-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.linked-issue-item {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.linked-issue-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.issue-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.issue-id {
+  background-color: #f0f0f0;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.reporter-label {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.issue-title {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 4px;
+  word-wrap: break-word;
+}
+
+.issue-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Reporters Summary */
+.reporters-section {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: white;
+  border-radius: 4px;
+  border-left: 3px solid #4CAF50;
+}
+
+.reporters-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.reporters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reporter-badge {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Merge Actions */
+.merge-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.unmerge-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.unmerge-btn:hover:not(:disabled) {
+  background-color: #ff5252;
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+}
+
+.unmerge-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Info Box */
+.merge-note {
+  background-color: #fff9e6;
+  border-left: 4px solid #ffc107;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #6f5c00;
+}
+
+.merge-note strong {
+  color: #3a2f00;
+}
+
+/* Reporters Count Badge */
+.reporters-count {
+  background-color: #2196F3;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.merged-count-badge {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Loading State */
+.unmerge-btn.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .merged-issues-panel {
+    padding: 12px;
+  }
+
+  .merge-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .merge-metadata {
+    gap: 15px;
+  }
+
+  .issue-item-header {
+    flex-direction: column;
+  }
+
+  .reporters-list {
+    justify-content: space-between;
+  }
+
+  .merge-actions {
+    justify-content: center;
+  }
+}

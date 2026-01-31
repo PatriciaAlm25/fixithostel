@@ -1,0 +1,56 @@
+{
+  "notices": [
+    {
+      "id": "notice_1769499014435",
+      "title": "jhdhdfkj",
+      "description": "dguukmr",
+      "content": "dsgjkfig",
+      "postedBy": "fixit hostel",
+      "userId": "user_1769497634396",
+      "role": "management",
+      "createdAt": "2026-01-27T07:30:14.435Z",
+      "updatedAt": "2026-01-27T07:30:14.435Z",
+      "views": 0,
+      "archived": false
+    },
+    {
+      "id": "notice_1769510323784",
+      "title": "pao",
+      "description": "anthony is a pao",
+      "content": "anthony is a pao",
+      "postedBy": "patricia almeida",
+      "userId": "user_1769510256631",
+      "role": "management",
+      "createdAt": "2026-01-27T10:38:43.784Z",
+      "updatedAt": "2026-01-27T10:38:43.784Z",
+      "views": 0,
+      "archived": false
+    },
+    {
+      "id": "notice_1769710864431",
+      "title": "n",
+      "description": "m",
+      "content": "m",
+      "postedBy": "patricia almeida",
+      "userId": "user_1769709511954",
+      "role": "management",
+      "createdAt": "2026-01-29T18:21:04.431Z",
+      "updatedAt": "2026-01-29T18:21:04.431Z",
+      "views": 0,
+      "archived": false
+    },
+    {
+      "id": "notice_1769786541538",
+      "title": "dd",
+      "description": "gd",
+      "content": "g",
+      "postedBy": "fixit hostel",
+      "userId": "user_1769785544001",
+      "role": "management",
+      "createdAt": "2026-01-30T15:22:21.538Z",
+      "updatedAt": "2026-01-30T15:22:21.538Z",
+      "views": 0,
+      "archived": false
+    }
+  ]
+}
